@@ -20,12 +20,6 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Zurich
-          plugin_activity: yes
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          plugin_activity_limit: 5
-          plugin_activity_load: 300
-          plugin_activity_visibility: all
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
           plugin_languages: yes
