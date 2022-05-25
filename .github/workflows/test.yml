@@ -1,4 +1,4 @@
-name: Test
+name: Test GH Actions
 on: 
   workflow_dispatch:
 jobs:
