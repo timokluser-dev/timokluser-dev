@@ -1,0 +1,6 @@
+name: Test
+jobs:
+  test-gh-actions:
+    runs-on: self-hosted
+    steps:
+      - run: docker ps
