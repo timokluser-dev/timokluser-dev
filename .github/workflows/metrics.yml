@@ -35,4 +35,4 @@ jobs:
 
           # Commit
           committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
-          committer_message: "do some magic ✨"
+          committer_message: "do some magic ✨ \n[no ci]"
