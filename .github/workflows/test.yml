@@ -1,6 +1,9 @@
 name: Test GH Actions
 on: 
   workflow_dispatch:
+  push:
+    branches:
+      - "feature/gh-runner-selfhosted"
 jobs:
   test-gh-actions:
     runs-on: self-hosted
