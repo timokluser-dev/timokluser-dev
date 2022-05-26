@@ -5,4 +5,5 @@ jobs:
   test-gh-actions:
     runs-on: self-hosted
     steps:
-      - run: docker ps
+      - name: Docker
+        run: docker ps
