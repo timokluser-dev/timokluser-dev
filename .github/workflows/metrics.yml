@@ -35,6 +35,7 @@ jobs:
           plugin_languages_threshold: 0%
           plugin_notable: yes
           plugin_notable_types: commit, pull_request
+          plugin_notable_from: all
           plugin_notable_filter: "stars:>1000"
 
           # Commit
