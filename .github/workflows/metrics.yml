@@ -11,6 +11,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: lowlighter/metrics@latest
+        timeout-minutes: 30
         with:
           # Your GitHub token
           token: ${{ secrets.METRICS_TOKEN }}
@@ -32,6 +33,12 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
+          plugin_notable: yes
+          plugin_notable_types: commit, pull_request
+          plugin_notable_from: all
+          plugin_notable_repositories: true
+          plugin_notable_skipped: jlord/patchwork
+          plugin_notable_filter: "stars:>1000"
 
           # Commit
           committer_token: ${{ secrets.METRICS_COMMITTER_TOKEN }}
