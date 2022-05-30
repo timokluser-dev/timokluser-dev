@@ -9,6 +9,7 @@ on:
 jobs:
   github-metrics:
     runs-on: self-hosted
+    concurrency: github-metrics-timokluser-dev
     steps:
       - uses: lowlighter/metrics@latest
         timeout-minutes: 30
