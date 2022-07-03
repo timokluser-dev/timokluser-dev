@@ -8,7 +8,7 @@ on:
   push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     concurrency: github-metrics-timokluser-dev
     steps:
       - uses: lowlighter/metrics@latest
