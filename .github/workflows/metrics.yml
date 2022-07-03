@@ -12,7 +12,7 @@ jobs:
     concurrency: github-metrics-timokluser-dev
     steps:
       - uses: lowlighter/metrics@latest
-        timeout-minutes: 30
+        timeout-minutes: 10
         with:
           # Your GitHub token
           token: ${{ secrets.METRICS_TOKEN }}
